@@ -1,0 +1,41 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background: rgb(24, 24, 34);
+}
+
+.headerText {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.headerText h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.canvas {
+  outline: none;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  mix-blend-mode: exclusion;
+}
+
+@media screen and (max-width: 768px) {
+  .headerText h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .headerText h1 {
+    font-size: 4rem;
+  }
+}
